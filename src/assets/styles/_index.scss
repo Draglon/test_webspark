@@ -1,0 +1,14 @@
+@use 'variables';
+@use 'globals';
+@use 'mixins/index';
+@use 'fonts';
+
+@use 'page';
+@use 'header';
+@use 'followers';
+@use 'locale_switcher';
+@use 'theme_switcher';
+@use 'section';
+@use 'gallery';
+@use 'gallery-tab';
+@use 'button';

@@ -1,0 +1,28 @@
+.followers {
+  display: flex;
+  padding-top: 13px;
+}
+.followers__item {
+  padding: 0 4px;
+
+  &:first-child {
+    padding-right: 24px;
+  }
+  &:nth-child(2) {
+    padding-right: 12px;
+  }
+}
+.followers__value {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+.followers__text {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
