@@ -1,0 +1,21 @@
+.input-date-picker {
+  box-sizing: border-box;
+
+  .ant-picker-suffix, .ant-picker-clear {
+    background-color: #EBEBEB;
+    border-left: 1px solid #DEDEDE;
+    height: 26px;
+    width: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    .icon-calendar, .icon-cross {
+      color: #5F5F5F;
+      font-size: 24px;
+      margin-right: 1px;
+      margin-bottom: 1px;
+    }
+  }
+}

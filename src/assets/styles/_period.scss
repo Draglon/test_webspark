@@ -16,9 +16,21 @@
   gap: 22px;
 }
 .period__field {
-
+  :where(.css-dev-only-do-not-override-1iph5z3).ant-picker-outlined:focus, :where(.css-dev-only-do-not-override-1iph5z3).ant-picker-outlined:focus-within {
+    border: 1px solid var(--blue) !important;
+  }
+  :where(.css-dev-only-do-not-override-1iph5z3).ant-picker .ant-picker-input >input:placeholder-shown {
+    color: #636264;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+  }
 }
 .period__input {
+  border-radius: 4px !important;
+  border: 1px solid var(--grey-lighter) !important;
   height: 28px;
   width: 162px;
+  padding: 0;
+  padding-left: 8px;
 }

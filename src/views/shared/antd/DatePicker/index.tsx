@@ -11,6 +11,8 @@ const DatePicker = ({
   return (
     <AntdDatePicker
       className={clsx("input-date-picker", className)}
+      suffixIcon={<i className="icon icon-calendar" />}
+      allowClear={{ clearIcon: <i className="icon icon-cross" /> }}
       {...rest}
     />
   )

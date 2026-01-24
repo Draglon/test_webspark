@@ -43,7 +43,7 @@ const GuestHeader = () => {
             <label className="period__label">{t("date")}</label>
             <form className="period__form">
               <div className="period__field">
-                <DatePicker className="period__input" placeholder={t("from")} />
+                <DatePicker className="period__input" placeholder={t("from")}/>
               </div>
               <div className="period__field">
                 <DatePicker className="period__input" placeholder={t("to")} />
