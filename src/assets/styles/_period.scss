@@ -1,0 +1,24 @@
+.period {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2px;
+}
+.period__label {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.period__form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 22px;
+}
+.period__field {
+
+}
+.period__input {
+  height: 28px;
+  width: 162px;
+}

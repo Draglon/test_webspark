@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import logoSRC from "@/assets/images/logo.svg";
 import { Title } from "@/views/shared/antd/Typography";
 import Button from "@/views/shared/antd/Button";
+import DatePicker from "@/views/shared/antd/DatePicker";
 // import ThemeSwitcher from "@/views/shared/ThemeSwitcher";
 // import LocalSwitcherSelect from "@/views/shared/LocalSwitcherSelect";
 
@@ -38,15 +39,17 @@ const GuestHeader = () => {
               <span className="followers__text"> {t("following")}</span>
             </div>
           </div>
-          {/* <div className="period">
-            <label className="period__label">Date:</label>
-            <div className="period__field">
-              <input className="period__input" type="date" id="period" name="period" value="All time">
-            </div>
-            <div className="period__field">
-              <input className="period__input" type="date" id="period" name="period" value="All time">
-            </div>
-          </div> */}
+          <div className="period">
+            <label className="period__label">{t("date")}</label>
+            <form className="period__form">
+              <div className="period__field">
+                <DatePicker className="period__input" placeholder={t("from")} />
+              </div>
+              <div className="period__field">
+                <DatePicker className="period__input" placeholder={t("to")} />
+              </div>
+            </form>
+          </div>
         </div>
         {/* Needless for this test task */}
         {/* <div className="header__menu">
