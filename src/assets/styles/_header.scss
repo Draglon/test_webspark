@@ -27,11 +27,8 @@
   padding-top: 7px;
 }
 .header__content {
-  padding-top: 20px;
-  padding-left: 20px;
-
   @media (min-width: 768px) {
-    padding-left: 86px;
+    padding-top: 20px;
   }
 }
 

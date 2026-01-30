@@ -5,12 +5,15 @@
 
 @use 'page';
 @use 'header';
+@use 'header_logo';
 @use 'followers';
 @use 'period';
 @use 'locale_switcher';
 @use 'theme_switcher';
 @use 'section';
 @use 'gallery';
-@use 'gallery-tab';
+@use 'gallery_tab';
+@use 'gallery_list';
+@use 'gallery_tiles';
 @use 'button';
-@use 'date-picker';
+@use 'date_picker';

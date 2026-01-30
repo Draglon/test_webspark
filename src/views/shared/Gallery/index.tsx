@@ -18,29 +18,29 @@ const Gallery = () => {
       "gallery--tiles": activeTab === "tiles",
     })}>
       <div className="gallery__tabs">
-        <div className={clsx("gallery__tab gallery__tab--tiles", {
+        <button className={clsx("gallery__tab gallery__tab--tiles", {
           "gallery__tab--active": activeTab === "tiles"
-        })} role="button" onClick={() => setActiveTab("tiles")}>
-          <div className="shape"></div>
-          <div className="shape"></div>
-          <div className="shape"></div>
-          <div className="shape"></div>
-          <div className="shape"></div>
-          <div className="shape"></div>
-          <div className="shape"></div>
-          <div className="shape"></div>
-          <div className="shape"></div>
-        </div>
-        <div className={clsx("gallery__tab gallery__tab--list", {
+        })} onClick={() => setActiveTab("tiles")}>
+          <span className="shape"></span>
+          <span className="shape"></span>
+          <span className="shape"></span>
+          <span className="shape"></span>
+          <span className="shape"></span>
+          <span className="shape"></span>
+          <span className="shape"></span>
+          <span className="shape"></span>
+          <span className="shape"></span>
+        </button>
+        <button className={clsx("gallery__tab gallery__tab--list", {
           "gallery__tab--active": activeTab === "list"
-        })} role="button"  onClick={() => setActiveTab("list")}>
-          <div className="shape"></div>
-          <div className="shape"></div>
-          <div className="shape"></div>
-          <div className="shape"></div>
-          <div className="shape"></div>
-          <div className="shape"></div>
-        </div>
+        })} onClick={() => setActiveTab("list")}>
+          <span className="shape"></span>
+          <span className="shape"></span>
+          <span className="shape"></span>
+          <span className="shape"></span>
+          <span className="shape"></span>
+          <span className="shape"></span>
+        </button>
       </div>
 
       <div className="gallery__content">

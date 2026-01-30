@@ -24,23 +24,27 @@ const GalleryItem = ({ src }: GalleryItemProps) => {
         <div className="gallery__item-list">
           <div className="gallery__item-label">{t("today")}</div>
           <div className="gallery__item-description">
-            <i className="icon icon-heart" />
-            <span className="gallery__item-text">128</span>
-          </div>
-          <div className="gallery__item-description">
-            <i className="icon icon-comment" />
-            <span className="gallery__item-text">31</span>
+            <div className="gallery__item-icon">
+              <i className="icon icon-heart" />
+              <span className="gallery__item-text">128</span>
+            </div>
+            <div className="gallery__item-icon">
+              <i className="icon icon-comment" />
+              <span className="gallery__item-text">31</span>
+            </div>
           </div>
         </div>
         <div className="gallery__item-list">
           <div className="gallery__item-label">9-08-2016</div>
           <div className="gallery__item-description">
-            <i className="icon icon-heart" />
-            <span className="gallery__item-text">67</span>
-          </div>
-          <div className="gallery__item-description">
-            <i className="icon icon-comment" />
-            <span className="gallery__item-text">22</span>
+            <div className="gallery__item-icon">
+              <i className="icon icon-heart" />
+              <span className="gallery__item-text">67</span>
+            </div>
+            <div className="gallery__item-icon">
+              <i className="icon icon-comment" />
+              <span className="gallery__item-text">22</span>
+            </div>
           </div>
         </div>
         <div className="gallery__item-list">

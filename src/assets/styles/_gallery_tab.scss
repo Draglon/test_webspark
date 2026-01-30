@@ -7,6 +7,10 @@
   margin: 2px 8px 23px;
 }
 .gallery__tab {
+  background-color: var(--white_0);
+  padding: 0;
+  margin: 0;
+  border: none;
   cursor: pointer;
   box-sizing: border-box;
   display: grid;
