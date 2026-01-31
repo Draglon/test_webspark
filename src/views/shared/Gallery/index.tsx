@@ -3,10 +3,22 @@ import clsx from 'clsx';
 import { useState } from 'react';
 import { useTranslations } from "next-intl";
 
-import image_1_1xSRC from "@/assets/images/tiles/image_1@1x.jpg";
+import image_1_1xSRC from "@/../public/images/tiles/image_1@1x.jpg";
+import image_1_2xSRC from "@/../public/images/tiles/image_1@2x.jpg";
 
 import Button from "@/views/shared/antd/Button";
 import GalleryItem from "@/views/shared/GalleryItem";
+
+const IMAGES = [
+  { id: "1", src1x: image_1_1xSRC, src2x: image_1_2xSRC },
+  { id: "2", src1x: image_1_1xSRC, src2x: image_1_2xSRC },
+  { id: "3", src1x: image_1_1xSRC, src2x: image_1_2xSRC },
+  { id: "4", src1x: image_1_1xSRC, src2x: image_1_2xSRC },
+  { id: "5", src1x: image_1_1xSRC, src2x: image_1_2xSRC },
+  { id: "6", src1x: image_1_1xSRC, src2x: image_1_2xSRC },
+  { id: "7", src1x: image_1_1xSRC, src2x: image_1_2xSRC },
+  { id: "8", src1x: image_1_1xSRC, src2x: image_1_2xSRC },
+];
 
 const Gallery = () => {
   const t = useTranslations("shared");
@@ -44,14 +56,9 @@ const Gallery = () => {
       </div>
 
       <div className="gallery__content">
-        <GalleryItem src={image_1_1xSRC} />
-        <GalleryItem src={image_1_1xSRC} />
-        <GalleryItem src={image_1_1xSRC} />
-        <GalleryItem src={image_1_1xSRC} />
-        <GalleryItem src={image_1_1xSRC} />
-        <GalleryItem src={image_1_1xSRC} />
-        <GalleryItem src={image_1_1xSRC} />
-        <GalleryItem src={image_1_1xSRC} />
+        {IMAGES.map(image => (
+          <GalleryItem image={image} key={image.id}/>
+        ))}
       </div>
 
       <div className="gallery__buttons">

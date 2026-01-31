@@ -3,18 +3,19 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 type GalleryItemProps = {
-  src: any;
+  image: any;
 }
 
-const GalleryItem = ({ src }: GalleryItemProps) => {
+const GalleryItem = ({ image }: GalleryItemProps) => {
   const t = useTranslations("shared");
 
   return (
     <div className="gallery__item">
       <picture className="gallery__item-picture">
+        <source srcSet={`${image.src1x} 1x, ${image.src2x} 2x`} />
         <Image
           className="gallery__item-image"
-          src={src}
+          src={image.src1x}
           alt="Image 1"
           width="203"
           height="203"

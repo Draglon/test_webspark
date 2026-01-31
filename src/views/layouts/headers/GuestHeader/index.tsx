@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-import logoSRC from "@/assets/images/logo.svg";
+import logoSRC from "@/../public/images/logo.svg";
 import { Title } from "@/views/shared/antd/Typography";
 import Button from "@/views/shared/antd/Button";
 import DatePicker from "@/views/shared/antd/DatePicker";
