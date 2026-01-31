@@ -12,7 +12,6 @@
   .gallery__item-image {
     width: 86px;
     height: 86px;
-    display: block;
   }
   .gallery__item-content {
     grid-template-columns: repeat(2, 1fr);
@@ -61,7 +60,9 @@
       }
       .gallery__item-date {
         font-size: 14px;
-        // margin-top: 8px;
+        @media (min-width: 480px) {
+          margin-top: 8px;
+        }
       }
     }
   }

@@ -25,12 +25,18 @@
     font-size: 13px;
     font-weight: 400;
   }
+
+
 }
 .period__input {
   border-radius: 4px !important;
   border: 1px solid var(--grey-lighter) !important;
   height: 28px;
-  width: 162px;
   padding: 0;
   padding-left: 8px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 162px;
+  }
 }

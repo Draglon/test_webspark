@@ -6,7 +6,12 @@
   }
 }
 
-// .logo__img {
-//   width: 100px;
-//   height: 100px;
-// }
+.logo__img {
+  width: 100px;
+  height: 100px;
+
+  @media (min-width: 768px) {
+    width: 138px;
+    height: 138px;
+  }
+}

@@ -1,6 +1,5 @@
 "use client";
 
-// import { Text, Title } from "@/views/shared/antd/Typography";
 import GuestLayout from "@/views/layouts/GuestLayout";
 import Gallery from "@/views/shared/Gallery";
 
