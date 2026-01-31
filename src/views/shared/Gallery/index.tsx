@@ -32,7 +32,7 @@ const Gallery = () => {
       <div className="gallery__tabs">
         <button className={clsx("gallery__tab gallery__tab--tiles", {
           "gallery__tab--active": activeTab === "tiles"
-        })} onClick={() => setActiveTab("tiles")}>
+        })} onClick={() => setActiveTab("tiles")} aria-label="Tiles">
           <span className="shape"></span>
           <span className="shape"></span>
           <span className="shape"></span>
@@ -45,7 +45,7 @@ const Gallery = () => {
         </button>
         <button className={clsx("gallery__tab gallery__tab--list", {
           "gallery__tab--active": activeTab === "list"
-        })} onClick={() => setActiveTab("list")}>
+        })} onClick={() => setActiveTab("list")} aria-label="List">
           <span className="shape"></span>
           <span className="shape"></span>
           <span className="shape"></span>
